@@ -8,30 +8,32 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var button : Button
+    lateinit var textView : TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var button: Button = findViewById(R.id.button)
-        var textView: TextView = findViewById(R.id.textView)
-
-        setView(textView)
-        setListener(textView,button)
+        button = findViewById(R.id.button)
+        textView = findViewById(R.id.textView)
+        setView()
+        setListener()
     }
 
-    fun setView(textView: TextView) {
+    fun setView(){
         textView.visibility = View.INVISIBLE
     }
 
-    fun setListener(textView: TextView, button: Button){
+    fun setListener(){
         button.setOnClickListener{
             if (textView.visibility == View.INVISIBLE) {
                 textView.visibility = View.VISIBLE
-                button.text = "HIDE"
+                button.text = getString(R.string.btn_hide)
             }
             else{
                 textView.visibility = View.INVISIBLE
-                button.text = "SHOW"
+                button.text =  getString(R.string.btn_show)
             }
         }
     }
