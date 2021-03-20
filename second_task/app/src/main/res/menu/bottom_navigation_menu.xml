@@ -3,9 +3,9 @@
     <item
         android:id="@+id/input_menu"
         android:title="@string/input_menu"
-        android:icon="@drawable/ic_add_circle_outline_black_24dp"/>
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"/>
     <item
         android:id="@+id/show_menu"
-        android:icon="@drawable/ic_people_black_24dp"
+        android:icon="@drawable/ic_baseline_people_24"
         android:title="@string/show_menu"/>
 </menu>
