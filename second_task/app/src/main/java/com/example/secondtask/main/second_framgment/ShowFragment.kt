@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
+import com.example.secondtask.R
 import com.example.secondtask.databinding.InputFragmentBinding
 import com.example.secondtask.databinding.ShowFragmentBinding
 import com.example.secondtask.main.model.TetaMenza
@@ -28,7 +29,7 @@ class ShowFragment : Fragment() {
     ): View? {
         _binding = ShowFragmentBinding.inflate(inflater,container,false)
         val view = binding.root
-        adapter= ArrayAdapter(context!!, android.R.layout.simple_list_item_1)
+        adapter= ArrayAdapter(context!!, R.layout.custom_list_item)
         binding.listView.adapter = adapter
         viewModel.tete.observe(viewLifecycleOwner, Observer {
             adapter.addAll(it)

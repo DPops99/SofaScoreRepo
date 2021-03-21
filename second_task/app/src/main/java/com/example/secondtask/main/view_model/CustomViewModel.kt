@@ -3,6 +3,8 @@ package com.example.secondtask.main.view_model
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.secondtask.main.model.TetaMenza
+import com.example.secondtask.main.model.enums.Job_Position
+import com.example.secondtask.main.model.enums.Workplace
 
 class CustomViewModel : ViewModel() {
 
@@ -10,9 +12,9 @@ class CustomViewModel : ViewModel() {
 
     init {
         tete.value = arrayListOf(
-            TetaMenza("Marija","Maric","Cvjetno",45,12345678),
-            TetaMenza("Marin","Maric","Cvjetno",30,12345678),
-            TetaMenza("Ivo","Ivic","Sava",55,123454448)
+            TetaMenza("Marija","Maric", Workplace.SD_CVJETNO_NASELJE,45,12345678,"female", Job_Position.ASSISTANT_CHEF, "first", "fake_user@gmail.com", "Ivanicgradska 5"),
+            TetaMenza("Marin","Maric", Workplace.CASSANDRA,30,12345678,"male", Job_Position.CHEF, "first", "fake_user@gmail.com", "Dubrovacka 4"),
+            TetaMenza("Ivo","Ivic", Workplace.FFZG,55,123454448,"male", Job_Position.CASHIER, "second", "fake_user@gmail.com", "Ivanicgradska 14")
         )
     }
 

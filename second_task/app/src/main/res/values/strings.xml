@@ -6,7 +6,16 @@
     <string name="last_name">Last Name</string>
     <string name="oib">OIB</string>
     <string name="age">Age</string>
-    <string name="workplace">Workplace</string>
+    <string name="workplace">WORKPLACE</string>
     <string name="btn_save">SAVE</string>
     <string name="text_view_welcome">Hello Teta iz menze, please enter your information!</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="email">email</string>
+    <string name="address">address</string>
+    <string name="first">first</string>
+    <string name="second">second</string>
+    <string name="gender">GENDER</string>
+    <string name="job_shift">JOB SHIFT</string>
+    <string name="job_position">JOB POSITION</string>
 </resources>
